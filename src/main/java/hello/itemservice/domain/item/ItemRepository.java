@@ -15,7 +15,7 @@ public class ItemRepository {
     private static AtomicLong sequence = new AtomicLong();
 
     public Item save(Item item) {
-        item.setId(sequence.getAndIncrement());
+        item.setId(sequence.incrementAndGet());
         store.put(item.getId(), item);
         return item;
     }
