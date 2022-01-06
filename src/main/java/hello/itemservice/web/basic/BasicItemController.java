@@ -61,6 +61,7 @@ public class BasicItemController {
         // 이 문제를 해결하려면 POST 후 뷰 템플릿을 호출하지 말고 리다이렉트를 해주면 된다.
         // 웹 브라우저 입장에서 리다이렉트는 화면을 실제 자기자신이 호출해서 이동한 것이기 때문에
         // 마지막에 호출한 내용이 [GET 리다이렉트 url] 이므로 문제가 해결된다.
+        // PRG 패턴으로 부른다. (Post Redirect Get)
     }
 
 //    @PostMapping("/add")
